@@ -1,0 +1,138 @@
+@import "./root.css";
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v18-latin-regular.woff2") format("woff2");
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v18-latin-600.woff2") format("woff2");
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v18-latin-700.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-black);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 38.4rem;
+  width: 100%;
+  gap: 24px;
+}
+
+.card__block {
+  border-radius: 12px;
+  background-color: var(--color-dark-grey);
+  padding: 4rem;
+  text-align: center;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.card__image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.4rem;
+}
+
+.card__hero__item {
+  width: 304px;
+  height: 36px;
+}
+
+.hero__text {
+  font-size: var(--big-fs);
+  font-weight: 600;
+  line-height: var(--small-lh);
+  color: var(--color-white);
+}
+.card__hero__subtitle {
+  font-size: var(--small-fs);
+  font-weight: 700;
+  line-height: var(--small-lh);
+  color: var(--color-neon-gren);
+}
+
+.card__hero__text {
+  font-size: var(--small-fs);
+  font-weight: 400;
+  line-height: var(--small-lh);
+  color: var(--color-white);
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+.card__links > *:not(:last-child) {
+  max-width: 30.4rem;
+  max-height: 28.9rem;
+  gap: 16px;
+  margin-bottom: 1.2rem;
+}
+.card__links__item {
+  font-size: var(--small-fs);
+  font-weight: 700;
+  line-height: var(--small-lh);
+  color: var(--color-white);
+  background-color: var(--color-grey);
+  display: block;
+  padding: 12px;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.card__links__item:active {
+  background-color: var(--color-neon-gren);
+  color: var(--color-grey);
+}
